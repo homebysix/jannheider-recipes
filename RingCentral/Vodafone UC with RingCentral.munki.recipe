@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Vodafone UC with RingCentral and imports it into Munki.</string>
+	<key>Identifier</key>
+	<string>com.github.jannheider.munki.VodafoneUCwithRingCentral</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Vodafone UC with RingCentral</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>RcAppSipMedia.app</string>
+				<string>Vodafone UC with RingCentral.app</string>
+				<string>Vodafone UC with RingCentral Helper.app</string>
+				<string>Vodafone UC with RingCentral Helper (Plugin).app</string>
+				<string>Vodafone UC with RingCentral Helper (Renderer).app</string>
+				<string>Vodafone UC with RingCentral Helper (GPU).app</string>
+			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>Vodafone connectivity software.</string>
+			<key>developer</key>
+			<string>RingCentral, Inc.</string>
+			<key>display_name</key>
+			<string>Vodafone UC with RingCentral</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.jannheider.download.VodafoneUCwithRingCentral</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%pathname%</string>
+				<key>repo_subdirectory</key>
+				<string>%MUNKI_REPO_SUBDIR%</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
