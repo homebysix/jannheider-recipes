@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Jamie v5 and imports it into Munki.</string>
+	<string>Downloads the latest version of Jamie and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.jannheider.munki.Jamiev5</string>
+	<string>com.github.jannheider.munki.Jamie</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>Jamie v5</string>
+		<string>Jamie</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -23,7 +23,7 @@
 			<key>developer</key>
 			<string>wespond UG (haftungsbeschraenkt)</string>
 			<key>display_name</key>
-			<string>Jamie v5</string>
+			<string>Jamie</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -33,7 +33,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jannheider.download.Jamiev5</string>
+	<string>com.github.jannheider.download.Jamie</string>
 	<key>Process</key>
 	<array>
 		<dict>

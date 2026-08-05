@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Jamie v5 and creates a package.</string>
+	<string>Downloads the latest version of Jamie and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.jannheider.pkg.Jamiev5</string>
+	<string>com.github.jannheider.pkg.Jamie</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Jamie v5</string>
+		<string>Jamie</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jannheider.download.Jamiev5</string>
+	<string>com.github.jannheider.download.Jamie</string>
 	<key>Process</key>
 	<array>
 		<dict>

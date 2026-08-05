@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Installs the latest version of Jamie v5.</string>
+	<string>Installs the latest version of Jamie.</string>
 	<key>Identifier</key>
-	<string>com.github.jannheider.install.Jamiev5</string>
+	<string>com.github.jannheider.install.Jamie</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Jamie v5</string>
+		<string>Jamie</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jannheider.download.Jamiev5</string>
+	<string>com.github.jannheider.download.Jamie</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -28,7 +28,7 @@
 						<key>destination_path</key>
 						<string>/Applications</string>
 						<key>source_item</key>
-						<string>Jamie v5.app</string>
+						<string>Jamie.app</string>
 					</dict>
 				</array>
 			</dict>

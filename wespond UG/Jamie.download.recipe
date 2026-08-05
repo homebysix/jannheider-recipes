@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Jamie v5.</string>
+	<string>Downloads the latest version of Jamie.</string>
 	<key>Identifier</key>
-	<string>com.github.jannheider.download.Jamiev5</string>
+	<string>com.github.jannheider.download.Jamie</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Jamie v5</string>
+		<string>Jamie</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -22,6 +22,8 @@
 				<string>.*\.dmg$</string>
 				<key>github_repo</key>
 				<string>meetjamie/releases</string>
+				<key>latest_only</key>
+				<true/>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
@@ -30,7 +32,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%-%version%.dmg</string>
+				<string>%NAME%.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
@@ -43,7 +45,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%pathname%/Jamie v5.app</string>
+				<string>%pathname%/Jamie.app</string>
 				<key>requirement</key>
 				<string>identifier "com.jamie.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "88YHHX72GQ"</string>
 			</dict>
@@ -54,7 +56,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%pathname%/Jamie v5.app/Contents/Info.plist</string>
+				<string>%pathname%/Jamie.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
